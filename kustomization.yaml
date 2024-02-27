@@ -1,8 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- backend-deployment.yaml
-- backend-svc.yaml
+- deployment.yaml
+- service.yaml
 images:
 - newTag: v2
 - name: ghcr.io/dohyun-99/springboot_crud_security_keycloak_new
